@@ -57,3 +57,19 @@ li a:hover{
     border-top: solid 3px #cd950c;
 }
 
+.agenciaConta {
+    display: flex;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 20px;
+    width: 150px;
+    justify-content: center;
+    align-items: center;
+}
+
+.agenciaConta input {
+    border: none;
+    text-align: center;
+    font-size: 1.3em;
+    width: 80px;
+}
