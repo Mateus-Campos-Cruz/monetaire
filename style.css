@@ -30,6 +30,10 @@ body {
 
 .header {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: solid 2px red;
+    padding: 20px 40px;
 }
 
 .logo img {
@@ -38,8 +42,18 @@ body {
 
 ul {
     list-style-type: none;
+    display: flex;
+    flex-direction: row;
 }
 
-a {
+li a{
+    margin-left: 10px;
     text-decoration: none;
+    color: #cd950c;
+    font-size: 1.3em;
 }
+
+li a:hover{
+    border-top: solid 3px #cd950c;
+}
+
