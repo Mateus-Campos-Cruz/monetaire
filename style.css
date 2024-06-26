@@ -32,7 +32,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: solid 2px red;
     padding: 20px 40px;
 }
 
@@ -47,14 +46,22 @@ ul {
 }
 
 li a{
-    margin-left: 10px;
+    margin-left: 15px;
     text-decoration: none;
     color: #cd950c;
     font-size: 1.3em;
+    letter-spacing: 2px;
 }
 
 li a:hover{
     border-top: solid 3px #cd950c;
+}
+
+.conta {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .agenciaConta {
@@ -73,4 +80,32 @@ li a:hover{
     text-align: center;
     font-size: 0.9em;
     width: 50px;
+    letter-spacing: 1px;
+}
+
+.botaoConta {
+    background-color: gray;
+    padding: 15px 20px;
+    margin-left: 15px;
+    border-radius: 10px;
+}
+
+.botaoConta a i{
+    color: rgb(88, 87, 87);
+}
+
+.login a{
+    color: #cd950c;
+    text-decoration: none;
+    padding: 15px;
+    border: solid #cd950c 2px;
+    border-radius: 10px;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+}
+
+.login a:hover{
+    color:#000033;
+    background-color: #cd950c;
+    border: solid #cd950c 2px;
 }
