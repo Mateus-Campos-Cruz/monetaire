@@ -61,15 +61,16 @@ li a:hover{
     display: flex;
     background-color: #fff;
     padding: 10px;
-    border-radius: 20px;
+    border-radius: 10px;
     width: 150px;
-    justify-content: center;
+    height: 30px;
+    justify-content: space-around;
     align-items: center;
 }
 
 .agenciaConta input {
     border: none;
     text-align: center;
-    font-size: 1.3em;
-    width: 80px;
+    font-size: 0.9em;
+    width: 50px;
 }
