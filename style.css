@@ -184,10 +184,36 @@ section {
 .sectionCard{
     display: flex;
     flex-direction: column;
+    margin: 40px 80px;
 }
 
-.sectionCard p{
+.sectionCard .resolva{
     justify-content: start;
+    margin-bottom: 40px;
+    font-size: 2em;
 }
+
+.sectionCard ul {
+    display: grid;
+    grid-template-columns: 16.6% 16.6% 16.6% 16.6% 16.6% 16.6%;
+}
+
+.sectionCard a {
+    border: solid 1px rgb(133, 132, 132);
+    text-decoration: none;
+    padding: 30px 40px;
+    margin: 0 0 0 20px;
+    border-radius: 10px;
+}
+
+.sectionCard a:hover {
+    border-color: #000033;
+    color: #000033;
+}
+
+.sectionCard ahover {
+   
+}
+
 
 /*SECTION FIM*/
