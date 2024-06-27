@@ -12,6 +12,10 @@ main {
     grid-area: conteudo;
 }
 
+section {
+    grid-area: secao;
+}
+
 footer {
     grid-area: rodape;
 }
@@ -19,12 +23,12 @@ footer {
 body {
     display: grid;
     background-color: #000033;
-    min-width: 100vw;
     grid-template-columns: auto auto auto auto;
     grid-template-rows: auto auto auto;
     grid-template-areas: 
     'cabecalho cabecalho cabecalho cabecalho'
     'conteudo conteudo conteudo conteudo'
+    'secao secao secao secao'
     'rodape rodape rodape rodape';
 }
 
@@ -168,3 +172,22 @@ li a:hover{
             width: 60%;
         }
 /*MAIN FIM*/
+
+/*SECTION*/
+
+section {
+    grid-area: secao;
+    background-color: #fff;
+    display: flex;
+}
+
+.sectionCard{
+    display: flex;
+    flex-direction: column;
+}
+
+.sectionCard p{
+    justify-content: start;
+}
+
+/*SECTION FIM*/
