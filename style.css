@@ -139,7 +139,6 @@ li a:hover{
         display: flex;
         flex-direction: column;
         align-items: start;
-        letter-spacing: 3px;
     }
 
     .info h1 {
