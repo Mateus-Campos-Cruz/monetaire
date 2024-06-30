@@ -20,11 +20,6 @@ section {
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
 
-.secao2Cont {
-    grid-area: secao2;
-    font-family: 'Roboto', Arial, Helvetica, sans-serif;
-}
-
 footer {
     grid-area: rodape;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
@@ -33,13 +28,12 @@ footer {
 body {
     display: grid;
     background-color: #000033;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto auto auto;
     grid-template-areas: 
     'cabecalho cabecalho cabecalho cabecalho'
     'conteudo conteudo conteudo conteudo'
     'secao secao secao secao'
-    'secao2 secao2 secao2 secao2'
     'rodape rodape rodape rodape';
 }
 
@@ -187,6 +181,8 @@ li a:hover{
 
 section {
     grid-area: secao;
+    display: flex;
+    flex-direction: column;
     background-color: #fff;
     display: flex;
 }
@@ -239,7 +235,6 @@ section {
 /*SECTION 2*/
 
 .secao2Cont {
-    grid-area: secao2;
     margin: 80px;
 }
 
