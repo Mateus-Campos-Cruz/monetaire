@@ -48,7 +48,7 @@ body {
     width: 100px;
 }
 
-ul {
+.menu ul {
     list-style-type: none;
     display: flex;
     flex-direction: row;
@@ -184,7 +184,6 @@ section {
     display: flex;
     flex-direction: column;
     background-color: #fff;
-    display: flex;
 }
 
 .sectionCard{
@@ -202,7 +201,7 @@ section {
 .sectionCard ul {
     display: grid;
     gap: 20px;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     grid-template-rows: 1fr;
 }
 
@@ -236,6 +235,7 @@ section {
 
 .secao2Cont {
     margin: 80px;
+    width: auto;
 }
 
 .section2 p{
@@ -246,8 +246,9 @@ section {
 
 ul {
     display: grid;
+    gap: 20px;
     grid-template-columns: repeat(4, 1fr);
-    gap: 80px;
+    grid-template-rows: 1fr;
 }
 
 .section2 a {
@@ -260,5 +261,11 @@ ul {
 .section2 h2 {
     color: black;
     font-size: 1.2em;
+}
+
+.section2 li p{
+    font-weight: bold;
+    font-size: 0.9em;
+    margin-bottom: 40px;
 }
 /*SECTION 2*/
