@@ -20,6 +20,10 @@ section {
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
 
+.secao3 {
+    grid-area: secao3;
+}
+
 footer {
     grid-area: rodape;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
@@ -34,6 +38,7 @@ body {
     'cabecalho cabecalho cabecalho cabecalho'
     'conteudo conteudo conteudo conteudo'
     'secao secao secao secao'
+    'secao3 secao3 secao3 secao3'
     'rodape rodape rodape rodape';
 }
 
@@ -305,4 +310,31 @@ section {
     cursor: pointer;
 }
 
-/*SECTION 2*/
+/*SECTION 2 FIM*/
+
+/*SECTION 3*/
+
+.secao3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 80px 200px;
+    height: 150px;
+}
+
+.secao3 h2 {
+     color: white;
+     text-align: center;
+     font-size: 2em;
+}
+
+.secao3 p {
+    color: white;
+    font-size: 1em;
+}
+
+.secao3 .barraBusca {
+    
+}
+
+/*SECTION 3 FIM*/
