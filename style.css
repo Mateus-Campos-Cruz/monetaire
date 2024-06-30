@@ -331,10 +331,41 @@ section {
 .secao3 p {
     color: white;
     font-size: 1em;
+    margin-bottom: 10px;
 }
 
 .secao3 .barraBusca {
-    
+    display: flex;
+
+}
+
+.secao3 .barraBusca1 {
+    border-radius: 5px;
+    padding: 10px;
+    background-color: white;
+}
+
+.secao3 .barraBusca1 i {
+    color: #000033;
+    font-size: 1.1em;
+}
+
+.barraBusca input {
+    border: none;
+    outline: none;
+    padding: 5px;
+    width: 900px;
+}
+
+.secao3 .barraBusca1:hover {
+    border: solid 1 black;
+}
+
+.barraBusca2 a {
+    margin-left: 20px;
+    padding: 10px;
+    text-decoration: none;
+
 }
 
 /*SECTION 3 FIM*/
