@@ -386,10 +386,13 @@ section {
     width: auto;
 }
 
-
-
-
-
-
-
 /*SECTION 3 FIM*/
+
+/*FOOTER*/
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #cd950c;
+}
+/*FOOTER FIM*/
