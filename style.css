@@ -394,17 +394,18 @@ footer {
     display: flex;
     flex-direction: column;
     background-color: #cd950c;
+    color: #fff;
+    padding: 0pc 60px;
 }
 
 .tituloFooter {
-    padding: 20px 65px;
+    padding: 20px 0px;
 }
 
 hr {
-    width: 90%;
-    margin: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    color: #fff;
+    margin-top: 60px;
+    margin-bottom: 60px;
 }
 
 .gridFooter{
@@ -416,5 +417,6 @@ hr {
 .gridFooter div {
     display: flex;
     flex-direction: column;
+    
 }
 /*FOOTER FIM*/
