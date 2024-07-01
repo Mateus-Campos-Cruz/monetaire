@@ -334,10 +334,6 @@ section {
     margin-bottom: 10px;
 }
 
-.secao3 .barraBusca {
-    display: flex;
-
-}
 
 .secao3 .barraBusca1 {
     border-radius: 5px;
@@ -365,7 +361,21 @@ section {
     margin-left: 20px;
     padding: 10px;
     text-decoration: none;
+    border: solid 1px white;
+}
 
+.barraBusca {
+    display: flex;
+}
+
+.buttonBarra{
+    display: flex;
+    flex-direction: row;
+}
+
+.barraBusca2 {
+    
+    width: auto;
 }
 
 /*SECTION 3 FIM*/
