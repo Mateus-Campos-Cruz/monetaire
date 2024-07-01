@@ -301,7 +301,7 @@ section {
     border-radius: 10px;
     border: solid 1px #000033;
     color: #000033 !important;
-    width: 50%;
+    width: 60%;
 }
 
 .secao2Cont button:hover {
@@ -319,7 +319,8 @@ section {
     flex-direction: column;
     justify-content: space-between;
     padding: 80px 200px;
-    height: 150px;
+    height: 200px;
+    width: auto;
 }
 
 .secao3 h2 {
@@ -336,6 +337,7 @@ section {
 
 
 .secao3 .barraBusca1 {
+    display: flex;
     border-radius: 5px;
     padding: 10px;
     background-color: white;
@@ -350,32 +352,44 @@ section {
     border: none;
     outline: none;
     padding: 5px;
-    width: 900px;
+    width: 800px;
 }
 
 .secao3 .barraBusca1:hover {
     border: solid 1 black;
 }
 
+.barraBusca2 {
+    display: flex;
+}
+
 .barraBusca2 a {
     margin-left: 20px;
-    padding: 10px;
+    padding: 10px 15px;
     text-decoration: none;
     border: solid 1px white;
+    color: white ;
+    border-radius: 10px;
+}
+
+.barraBusca2 a:hover {
+    color: #000033 ;
+    background-color: #fff;
 }
 
 .barraBusca {
     display: flex;
+    justify-content: center;
 }
 
-.buttonBarra{
-    display: flex;
-    flex-direction: row;
-}
-
-.barraBusca2 {
-    
+.buttonBarra {
     width: auto;
 }
+
+
+
+
+
+
 
 /*SECTION 3 FIM*/
