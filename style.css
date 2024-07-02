@@ -432,4 +432,34 @@ hr {
     text-decoration: underline;
     cursor: pointer;
 }
+
+.finalFooter {
+    display: flex;
+}
+
+.finalFooter div {
+    display: flex;
+    justify-content: space-around;
+}
+
+.finalFooter i {
+    margin-right: 10px;
+}
+
+.finalFooter h2 {
+    font-size: 1em;
+}
+
+.mundi{
+    margin-right: 120px;
+}
+
+.infoFooter {
+    display: flex;
+    flex-direction: column;
+}
+
+.text2Footer {
+    font-size: 0.7em;
+}
 /*FOOTER FIM*/
