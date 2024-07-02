@@ -414,9 +414,22 @@ hr {
     
 }
 
+.gridFooter h1 {
+    margin-bottom: 20px;
+}
+
 .gridFooter div {
     display: flex;
     flex-direction: column;
     
+}
+
+.gridFooter a {
+    margin-bottom: 15px;
+}
+
+.gridFooter a:hover{
+    text-decoration: underline;
+    cursor: pointer;
 }
 /*FOOTER FIM*/
