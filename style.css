@@ -486,3 +486,15 @@ hr {
     margin-right: 10px;
 }
 /*FOOTER FIM*/
+
+/*OPENACCOUNT*/
+
+.titleForm {
+    background-color: #cd950c;
+    color: white;
+    text-align: center;
+}
+
+.mainOpen {
+    background-color: #e5e5ea;
+}
