@@ -43,8 +43,41 @@
             <h1>Preencha as informações para abrir a sua conta</h1>
         </div>
         <div class="mainOpen">
-            <form action="">
-                <label for="">Informações pessoais</label>
+            <form action="#" method="GET">
+                <label class="titulosForm">Informações pessoais</label>
+                <label class="subTitulosForm">Nome completo</label>
+                <div class="nomeCompleto">
+                    <input type="text" name="" id="">
+                    <input type="text" name="" id="">
+                    <label class="subTitulosForm">Nome</label>
+                    <label class="subTitulosForm">Sobrenome</label>
+                </div>
+                <label class="subTitulosForm">Data de nascimento</label>
+                <input type="date" name="" id="">
+                <label class="subTitulosForm">Nome da mãe</label>
+                <input type="text" name="" id="">
+                <label class="subTitulosForm">Telefone</label>
+                <input type="text" name="" id="">
+                <label class="subTitulosForm">Email</label>
+                <input type="email" name="" id="">
+                
+                <div class="CEP">
+                    <label class="subTitulosForm">Digite seu CEP</label>
+                    <input type="text" onchange="procurarCep()">
+                </div>
+
+                <div>
+                    <label class="titulosForm">Informações da conta</label>
+                    <label class="subTitulosForm">Tipo de conta</label>
+                    <select name="" id="">
+                        <option value="">Conta Corrente</option>
+                        <option value="">Conta Poupança</option>
+                        <option value="">Conta Salário</option>
+                    </select>
+                    <label class="subTitulosForm">Salário mensal</label>
+                    <input type="number" name="" id="">
+                </div>
+                
             </form>
         </div>        
     </main>
