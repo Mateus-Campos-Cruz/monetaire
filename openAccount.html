@@ -45,25 +45,38 @@
         <div class="mainOpen">
             <form action="#" method="GET">
                 <label class="titulosForm">Informações pessoais</label>
-                <label class="subTitulosForm">Nome completo</label>
+                
+
                 <div class="nomeCompleto">
+                    <label class="subTitulosForm">Nome completo</label>
                     <input type="text" name="" id="">
                     <input type="text" name="" id="">
                     <label class="subTitulosForm">Nome</label>
                     <label class="subTitulosForm">Sobrenome</label>
                 </div>
-                <label class="subTitulosForm">Data de nascimento</label>
-                <input type="date" name="" id="">
-                <label class="subTitulosForm">Nome da mãe</label>
-                <input type="text" name="" id="">
-                <label class="subTitulosForm">Telefone</label>
-                <input type="text" name="" id="">
-                <label class="subTitulosForm">Email</label>
-                <input type="email" name="" id="">
+                <div>
+                    <label class="subTitulosForm">Data de nascimento</label>
+                    <input type="date" name="" id="">
+                    <label class="subTitulosForm">Nome da mãe</label>
+                    <input type="text" name="" id="">
+                    <label class="subTitulosForm">Telefone</label>
+                    <input type="text" name="" id="">
+                    <label class="subTitulosForm">Email</label>
+                    <input type="email" name="" id="">
+                </div>
+                
                 
                 <div class="CEP">
                     <label class="subTitulosForm">Digite seu CEP</label>
                     <input type="text" onchange="procurarCep()">
+                </div>
+
+                <div class="infoAdressAPI">
+                    <label for="">Logradouro</label>
+                    <p></p>
+                    <label for="">Número</label>
+                    <input type="text" name="" id="">
+                    <label for=""></label>
                 </div>
 
                 <div>
@@ -77,6 +90,8 @@
                     <label class="subTitulosForm">Salário mensal</label>
                     <input type="number" name="" id="">
                 </div>
+
+                <input type="submit" value="Abrir minha conta" >
                 
             </form>
         </div>        
