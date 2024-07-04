@@ -498,3 +498,22 @@ hr {
 .mainOpen {
     background-color: #e5e5ea;
 }
+
+.titulosForm {
+    color: #000033;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.infoAdressAPI {
+    display: none;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 80%;
+    grid-template-rows: repeat(6, 1fr);
+    justify-content: center;
+    margin: 20px 20px;
+    padding: 20px 20px;
+}
