@@ -511,21 +511,35 @@ hr {
 
 form {
     display: grid;
-    grid-template-columns: 80%;
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: 60%;
+    grid-template-rows: repeat(5, auto);
     justify-content: center;
     margin: 20px 20px;
     padding: 20px 20px;
 }
 
 .nomeCompleto {
-    margin-top: 20px;
     margin-bottom: 20px;
+    margin-top: 20px;
     font-size: 1.3em;
 
 }
 
 .nomeCompleto input {
+    width: 80%;
+    padding: 8px;
+    font-size: 1.3em;
+    font-weight: bold;
+    border-radius: 20px;
+    border: 2px solid #000033;
+}
+
+.dataNasc {
+    margin-bottom: 20px;
+    font-size: 1.3em;
+}
+
+.dataNasc input{
     width: 80%;
     padding: 8px;
     font-size: 1.3em;
