@@ -585,3 +585,27 @@ form {
     border-radius: 20px;
     border: 2px solid #000033;
 }
+
+.containerBotaoConta {
+    display: flex;
+    justify-content: start;
+}
+
+input.botaoAbraConta {
+    width: 40%;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: #000033;
+    color: white;
+    font-size: 1.3em;
+    font-weight: bold;
+    justify-content: center;
+}
+
+input.botaoAbraConta:hover {
+    cursor: pointer;
+    border-radius: 15px;
+    background-color: white;
+    color: #000033;
+  
+}
