@@ -512,7 +512,7 @@ hr {
 form {
     display: grid;
     grid-template-columns: 60%;
-    grid-template-rows: repeat(5, auto);
+    grid-template-rows: repeat(6, auto);
     justify-content: center;
     margin: 20px 20px;
     padding: 20px 20px;
@@ -540,6 +540,44 @@ form {
 }
 
 .dataNasc input{
+    width: 80%;
+    padding: 8px;
+    font-size: 1.3em;
+    font-weight: bold;
+    border-radius: 20px;
+    border: 2px solid #000033;
+}
+
+.CEP {
+    margin-bottom: 20px;
+    font-size: 1.3em;
+}
+
+.CEP input{
+    width: 80%;
+    padding: 8px;
+    font-size: 1.3em;
+    font-weight: bold;
+    border-radius: 20px;
+    border: 2px solid #000033;
+}
+
+.infoConta {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 1.3em;
+}
+
+.infoConta input{
+    width: 80%;
+    padding: 8px;
+    font-size: 1.3em;
+    font-weight: bold;
+    border-radius: 20px;
+    border: 2px solid #000033;
+}
+
+.infoConta select{
     width: 80%;
     padding: 8px;
     font-size: 1.3em;
