@@ -590,7 +590,7 @@ form {
 .containerBotaoConta {
     display: flex;
     justify-content: start;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
 
 input.botaoAbraConta {
