@@ -616,3 +616,8 @@ input.botaoAbraConta:hover {
   
 }
 
+.abraContaFooter:hover {
+    opacity: 0.5;
+}
+
+
