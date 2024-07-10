@@ -519,6 +519,10 @@ form {
     color: white;
 }
 
+input[type=number]::-webkit-inner-spin-button{
+    appearance: none; 
+}
+
 .nomeCompleto {
     margin-bottom: 20px;
     margin-top: 20px;
