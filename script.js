@@ -1,7 +1,24 @@
 console.log('Entrou')
 
+function logar() {
 
-    function mensagemLogin() {      
+    const usuario = getElementsByClassName('usuario').value
+    const password = getElementsByClassName('senha').value
+
+    if(usuario == "" || password == ""){
+        mensagemLogin('Preencha as informações corretamente!');
+    }else {
+        mensagemLogin('Acessando sua conta!');
+        entrarConta();
+    }
+    
+}
+
+
+    function mensagemLogin(mensagem) {    
+        
+        
+
         const cssStyles = `.erro {
         display: none;
         background-color: green;
@@ -33,7 +50,7 @@ console.log('Entrou')
         styleElement.appendChild(document.createTextNode(cssStyles));      
         document.head.appendChild(styleElement);        
         const mensagemErro = document.createElement("div");      
-        mensagemErro.textContent = "Acessando sua conta";      
+        mensagemErro.textContent = mensagem;      
         mensagemErro.className = "erro";        
         const barraProgresso = document.createElement("div");      
         barraProgresso.className = "progresso";        
@@ -42,7 +59,7 @@ console.log('Entrou')
         mensagemErro.style.display = "block";      
         barraProgresso.style.display = "block"; 
         // Alterado para "block" para garantir exibição        
-        let tempoRestante = 5;      
+        let tempoRestante = 3;      
         const intervalo = 1000;        
         const temporizador = setInterval(function() {          
             tempoRestante -= 1;          
