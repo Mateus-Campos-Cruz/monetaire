@@ -22,16 +22,7 @@
                     <li><a href="">Busca</a></li>
                 </ul>
             </div>
-            <div class="conta">
-                <div class="agenciaConta">
-                    <input type="text" name="" id="" placeholder="agência">
-                    <span>|</span>
-                    <input type="text" name="" id="" placeholder="conta">
-                </div>
-                <div class="botaoConta">
-                    <a href=""><i class="fa-solid fa-lock"></i></a>
-                </div>
-            </div>
+            
             <div class="login">
                 <a href="login.html">Login</a>
             </div>
@@ -48,54 +39,54 @@
                 <div class="nomeCompleto">
                     <label class="titulosForm">Informações pessoais</label> <br> <br>
                     <label class="subTitulosForm">Nome completo</label> <br> 
-                    <input type="text" name="" id="">
+                    <input type="text" name="" id="nome">
                 </div>
 
                 <div class="dataNasc">
                     <label class="subTitulosForm">Data de nascimento</label><br> 
-                    <input type="date" name="" id=""> <br> <br>
+                    <input type="date" name="" id="dataNascimento"> <br> <br>
                     <label class="subTitulosForm">Nome da mãe</label> <br> 
-                    <input type="text" name="" id=""> <br> <br>
+                    <input type="text" name="" id="nomeMae"> <br> <br>
                     <label class="subTitulosForm">Telefone</label> <br> 
-                    <input type="number" name="" id=""> <br> <br>
+                    <input type="number" name="" id="telefone"> <br> <br>
                     <label class="subTitulosForm">Email</label> <br> 
-                    <input type="email" name="" id="">
+                    <input type="email" name="" id="email">
                 </div>
                 
                 
                 <div class="CEP">
                     <label class="subTitulosForm">Digite seu CEP</label> <br>
-                    <input type="number" onchange="procurarCep()">
+                    <input type="number"  id="cep" onblur="procurarCep()" oninput="limitarCaracteres(this, 8)">
                 </div>
 
-                <div class="infoAdressAPI">
-                    <label for="">Logradouro</label>
-                    <p></p>
-                    <label for="">Número</label>
-                    <input type="text" name="" id="">
-                    <label for="">Bairro</label>
-                    <p></p>
-                    <label for="">Cidade</label>
-                    <p></p>
-                    <label for="">Estado</label>
-                    <p></p>
+                <div id="infoAdressAPI">
+                    <label >Logradouro</label>
+                    <span id="logradouro"></span>
+                    <label>Número</label>
+                    <input type="text" name="" id="numero">
+                    <label>Bairro</label>
+                    <span id="bairro"></span>
+                    <label >Cidade</label>
+                    <span id="cidade"></span>
+                    <label>Estado</label>
+                    <span id="estado"></span>
                 </div>
                 
                 <div class="infoConta">
                     <label class="titulosForm">Informações da conta</label> <br> <br>
                     <label class="subTitulosForm">Tipo de conta</label> <br>
-                    <select name="" id="">
-                        <option value="">-- Selecione uma opção --</option>
-                        <option value="">Conta Corrente</option>
-                        <option value="">Conta Poupança</option>
-                        <option value="">Conta Salário</option>
+                    <select name="" id="tipoConta">
+                        <option value="0">-- Selecione uma opção --</option>
+                        <option value="1">Conta Corrente</option>
+                        <option value="2">Conta Poupança</option>
+                        <option value="3">Conta Salário</option>
                     </select> <br> <br>
                     <label class="subTitulosForm">Salário mensal</label> <br>
-                    <input type="number" name="" id="">
+                    <input type="number" name="" id="salario">
                 </div>
 
                 <div class="containerBotaoConta">
-                    <input class="botaoAbraConta" type="submit" value="Abrir minha conta" >
+                    <input class="botaoAbraConta" type="submit" value="Abrir minha conta" onclick="verificarInfoConta()">
                 </div>
                 
                 

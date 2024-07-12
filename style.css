@@ -182,6 +182,7 @@ li a:hover{
 
     .info a:hover{
         color:#000033;
+        font-weight: bold;
         background-color: #cd950c;
         border: solid #cd950c 2px;
         }

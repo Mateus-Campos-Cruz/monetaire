@@ -1,3 +1,5 @@
+/*LOGIN*/
+
 function logar() {
 
     const usuario = document.getElementById('usuario').value;
@@ -10,13 +12,8 @@ function logar() {
         entrarConta();
     }
     
-}
-
-
     function mensagemLogin(mensagem, color) {    
         
-        
-
         const cssStyles = `.erro {
         display: none;
         background-color: ${color} ;
@@ -76,3 +73,40 @@ function logar() {
             }      
         }, intervalo);  
     }
+}
+    /**LOGIN FIM */
+
+    /*ABRA SUA CONTA*/
+
+   
+    function limitarCaracteres(input, maxLength) {
+            if (input.value.length > maxLength) {
+                input.value = input.value.slice(0, maxLength);
+            }
+        }
+
+    function procurarCep(){
+        const campo = document.getElementById('infoAdressAPI').value
+        
+
+        if(campo === ""){
+            document.getElementById('infoAdressAPI').style.display = 'none'
+        }else{
+            if(campo.length == 8){
+                
+                //logica
+
+                document.getElementById('infoAdressAPI').style.display = 'block'
+            }else{
+                document.getElementById('infoAdressAPI').style.display = 'none'
+            }
+        }
+    }
+
+    function verificarInfoConta(nome, dataNascimento, nomeMae, telefone, email, cep, numero, tipoConta, salario) {
+         
+
+
+    }
+
+        /*ABRA SUA CONTA FIM*/
