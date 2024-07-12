@@ -96,10 +96,99 @@ function logar() {
 
                 //logica
 
-                document.getElementById('infoAdressAPI').style.display = 'flex'
-                document.getElementById('infoAdressAPI').style.flexDirection = 'column'
+                const cssStyles = ` 
+                #content1 {
+                display: flex;
+                flex-direction: column;
+                width: 80%;
+                          }
+
+                .content2 {
+                margin-bottom: 20px;
+                margin-top: 20px;
+                font-size: 1.3em;                          
+                          }
+
+                #content3 {
+                width: 20%;
+                padding: 8px;
+                font-size: 1.3em;
+                font-weight: bold;
+                border-radius: 20px;
+                border: 2px solid #000033;
+                } 
+
+                .content4 {
+                color: #cd950c; 
+                margin-bottom: 20px;
+                margin-top: 20px;
+                font-size: 1.3em; 
+                }
+                `;
+                //Aciona o elemento style dentro do documento
+                
+                const styleElement = document.createElement('style');
+                styleElement.type = 'text/css';
+                styleElement.appendChild(document.createTextNode(cssStyles));
+                document.head.appendChild(styleElement);
+
+                // Aplica o id content1 ao elemento com id infoAdressAPI
+                const content1 = document.getElementById('infoAdressAPI');
+                content1.id = "content1";
+
+                // Aplica a classe content2 a todos os elementos com a classe label
+                const content2 = document.getElementsByClassName('label');
+                for (let i = 0; i < content2.length; i++) {
+                    content2[i].className += " content2";
+                }
+
+                const content3 = document.getElementById('numero');
+                content3.id = "content3";
+
+                const content4 = document.getElementsByClassName('Address');
+                for (let i = 0; i < content4.length; i++){
+                    content4[i].className += " content4";
+                }
+                
+
+                buscarCep()
+
             }else{
                 document.getElementById('infoAdressAPI').style.display = 'none'
+            }
+        }
+
+        async function buscarCep() {
+            const cep = document.getElementById('cep').value.replace(/\D/g, ''); // Remove caracteres não numéricos
+            if (cep === "") {
+                alert('Por favor, digite um CEP.');
+                return;
+            }
+
+            const cepRegex = /^[0-9]{8}$/;
+            if (!cepRegex.test(cep)) {
+                alert('CEP inválido. Por favor, digite um CEP válido.');
+                return;
+            }
+
+            const url = `https://viacep.com.br/ws/${cep}/json/`;
+
+            try {
+                const response = await fetch(url);
+                const data = await response.json();
+
+                if (data.erro) {
+                    alert('CEP não encontrado.');
+                    return;
+                }
+
+                document.getElementById('logradouro').textContent = data.logradouro || 'Não disponível';
+                document.getElementById('bairro').textContent = data.bairro || 'Não disponível';
+                document.getElementById('cidade').textContent = data.localidade || 'Não disponível';
+                document.getElementById('estado').textContent = data.uf || 'Não disponível';
+            } catch (error) {
+                console.error('Erro ao buscar o CEP:', error);
+                alert('Erro ao buscar o CEP. Tente novamente mais tarde.');
             }
         }
     
