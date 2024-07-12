@@ -639,8 +639,9 @@ input.botaoAbraConta:hover {
     'coluna1 coluna2 coluna3'
     'coluna1 coluna2 coluna3'
     'coluna1 coluna2 coluna3';
-    margin: 20px 0px;
+    margin: 20px 90px;
     background-color: #dbdbdb;
+    border-radius: 15px;
 }
 
 
@@ -665,6 +666,7 @@ aside {
     color: white;
     padding: 20px;
     font-size: 20px;
+    border-radius: 15px;
 }
 
 .nameUser img {
@@ -680,8 +682,9 @@ aside {
     display: flex;
     flex-direction: column;
     background-color: white;
-    margin: 0px;
+    margin: 20px 0px;
     padding: 40px;
+    border-radius: 15px;
 }
 
 .menuBarUser ul {
@@ -723,7 +726,7 @@ aside {
 }
 
 .firstContent {
-    
+    background-color: white;
 }
 
 
