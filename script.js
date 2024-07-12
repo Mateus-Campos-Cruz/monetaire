@@ -1,5 +1,11 @@
 /*LOGIN*/
 
+document.getElementById('loginForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Evita o envio padrão do formulário que recarrega a página
+    logar(); // Chama a função de login
+});
+
+
 function logar() {
 
     const usuario = document.getElementById('usuario').value;
@@ -7,10 +13,16 @@ function logar() {
 
     if(usuario === "" || password === ""){
         mensagemLogin('Preencha as informações corretamente!', '#dc3545');
-    }else {
-        mensagemLogin('Acessando sua conta!', '#198754');
+    }else {               
         entrarConta();
+        
     }
+
+}
+
+function entrarConta() {
+    window.location.href = 'accountUser.html';   
+}
     
     function mensagemLogin(mensagem, color) {    
         
@@ -59,12 +71,12 @@ function logar() {
         barraProgresso.style.display = "block"; 
         // Alterado para "block" para garantir exibição  
 
-        let tempoRestante = 3;      
+        let tempoRestante = 5;      
         const intervalo = 1000;       
 
         const temporizador = setInterval(function() {          
             tempoRestante -= 1;          
-            const percentual = ((3 - tempoRestante) / 3) * 100;          
+            const percentual = ((5 - tempoRestante) / 5) * 100;          
             barraProgresso.style.width = percentual + "%";            
             if (tempoRestante <= 0) {              
                 clearInterval(temporizador);              
@@ -73,7 +85,7 @@ function logar() {
             }      
         }, intervalo);  
     }
-}
+
     /**LOGIN FIM */
 
     /*ABRA SUA CONTA*/
@@ -93,8 +105,6 @@ function logar() {
         if(campo === ""){
             document.getElementById('infoAdressAPI').style.display = 'none'
         }else if(campo.length === 8){
-
-                //logica
 
                 const cssStyles = ` 
                 #content1 {
@@ -228,7 +238,5 @@ function logar() {
             window.location.href = 'login.html';
 
         }
-
     }
-
         /*ABRA SUA CONTA FIM*/
