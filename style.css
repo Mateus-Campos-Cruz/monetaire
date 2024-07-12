@@ -627,4 +627,96 @@ input.botaoAbraConta:hover {
     opacity: 0.5;
 }
 
+/**/
+
+/*ACCOUNT USER*/
+
+.contentAccount {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    'coluna1 coluna2 coluna3'
+    'coluna1 coluna2 coluna3'
+    'coluna1 coluna2 coluna3';
+    margin: 20px 0px;
+    background-color: #dbdbdb;
+}
+
+
+aside {
+    grid-area: coluna1;
+}
+
+.firstContent {
+    grid-area: coluna2;
+}
+
+.secondContent {
+    grid-area: coluna3;
+}
+
+.nameUser  {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #cd950c;
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.nameUser img {
+    color: #d7aa3c;;
+    font-size: 48px;
+    margin: 20px 0px;
+    border-radius: 50px;
+    width: 100px;
+    
+}
+
+.menuBarUser {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin: 0px;
+    padding: 40px;
+}
+
+.menuBarUser ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.menuBarUser li {
+    list-style-type: none;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.menuBarUser i {
+    color: #d7aa3c;
+    margin-right: 10px;
+}
+
+.menuBarUser span {
+    float: right;
+}
+
+.menuBarUser span i {
+    color: black;
+    font-weight: bold;
+    float: right;
+}
+
+.menuBarUser a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: 'Fjalla One';
+}
+
+
 
