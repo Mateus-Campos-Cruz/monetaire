@@ -691,7 +691,6 @@ aside {
 
 .menuBarUser li {
     list-style-type: none;
-    margin-bottom: 30px;
     padding-bottom: 15px;
     border-bottom: 1px solid #dbdbdb;
 }
@@ -715,7 +714,12 @@ aside {
     color: black;
     font-weight: bold;
     text-decoration: none;
+    margin-bottom: 20px;
     font-family: 'Fjalla One';
+}
+
+.menuBarUser a:hover {
+    
 }
 
 
