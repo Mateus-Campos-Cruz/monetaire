@@ -6,7 +6,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
 });
 
 
-function logar() {
+function logar() { //FUNÇÃO ACIONADA QUANDO CLICA NO BOTÃO ENTRAR
 
     const usuario = document.getElementById('usuario').value;
     const password = document.getElementById('senha').value;
@@ -20,7 +20,7 @@ function logar() {
 
 }
 
-function entrarConta() {
+function entrarConta() { // DIRECIONA PARA A PÁGINA DO USUÁRIO
     window.location.href = 'accountUser.html';   
 }
     
