@@ -86,22 +86,23 @@ function logar() {
         }
 
     function procurarCep(){
-        const campo = document.getElementById('infoAdressAPI').value
+
+        const campo = document.getElementById('cep').value
         
 
         if(campo === ""){
             document.getElementById('infoAdressAPI').style.display = 'none'
-        }else{
-            if(campo.length == 8){
-                
+        }else if(campo.length === 8){
+
                 //logica
 
-                document.getElementById('infoAdressAPI').style.display = 'block'
+                document.getElementById('infoAdressAPI').style.display = 'flex'
+                document.getElementById('infoAdressAPI').style.flexDirection = 'column'
             }else{
                 document.getElementById('infoAdressAPI').style.display = 'none'
             }
         }
-    }
+    
 
     function verificarInfoConta(nome, dataNascimento, nomeMae, telefone, email, cep, numero, tipoConta, salario) {
          
