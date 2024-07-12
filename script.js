@@ -193,9 +193,41 @@ function logar() {
         }
     
 
-    function verificarInfoConta(nome, dataNascimento, nomeMae, telefone, email, cep, numero, tipoConta, salario) {
+    function verificarInfoConta() {
          
+        const nome = document.getElementById('nome').value;
+        const dataNascimento = document.getElementById('dataNascimento').value;
+        const nomeMae = document.getElementById('nomeMae').value;
+        const telefone = document.getElementById('telefone').value;
+        const email = document.getElementById('email').value;
+        const cep = document.getElementById('cep').value;
+        const numero = document.getElementById('numero').value;
+        const tipoConta = document.getElementById('tipoConta').value;
+        const salario = document.getElementById('salario').value;
 
+        if(nome === "" ){
+            mensagemLogin('Preencha o nome!', '#dc3545');
+        }else if(dataNascimento === ""){
+            mensagemLogin('Preencha o data de nascimento!', '#dc3545');
+        }else if(nomeMae === ""){
+            mensagemLogin('Preencha o nome da mãe!', '#dc3545');
+        }else if(telefone === ""){
+            mensagemLogin('Preencha o telefone!', '#dc3545');
+        }else if(email === ""){
+            mensagemLogin('Preencha o email!', '#dc3545');
+        }else if(cep === ""){  
+            mensagemLogin('Preencha o cep!', '#dc3545');
+        }else if(numero === ""){ 
+            mensagemLogin('Preencha o número!', '#dc3545');
+        }else if(tipoConta === ""){             
+            mensagemLogin('Preencha o tipo de conta!', '#dc3545');
+        }else if(tipoConta === ""){ 
+            mensagemLogin('Preencha o salário!', '#dc3545');
+        }else {
+            mensagemLogin('Criando a sua conta!', '#198754');
+            window.location.href = 'login.html';
+
+        }
 
     }
 
