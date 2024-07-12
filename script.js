@@ -1,27 +1,25 @@
-console.log('Entrou')
-
 function logar() {
 
-    const usuario = getElementsByClassName('usuario').value
-    const password = getElementsByClassName('senha').value
+    const usuario = document.getElementById('usuario').value;
+    const password = document.getElementById('senha').value;
 
-    if(usuario == "" || password == ""){
-        mensagemLogin('Preencha as informações corretamente!');
+    if(usuario === "" || password === ""){
+        mensagemLogin('Preencha as informações corretamente!', '#dc3545');
     }else {
-        mensagemLogin('Acessando sua conta!');
+        mensagemLogin('Acessando sua conta!', '#198754');
         entrarConta();
     }
     
 }
 
 
-    function mensagemLogin(mensagem) {    
+    function mensagemLogin(mensagem, color) {    
         
         
 
         const cssStyles = `.erro {
         display: none;
-        background-color: green;
+        background-color: ${color} ;
         color: #fff; padding: 10px;              
         text-align: center;              
         position: fixed;              
@@ -48,19 +46,25 @@ function logar() {
         const styleElement = document.createElement('style');      
         styleElement.type = 'text/css';      
         styleElement.appendChild(document.createTextNode(cssStyles));      
-        document.head.appendChild(styleElement);        
+        document.head.appendChild(styleElement);
+
         const mensagemErro = document.createElement("div");      
         mensagemErro.textContent = mensagem;      
-        mensagemErro.className = "erro";        
+        mensagemErro.className = "erro";
+
         const barraProgresso = document.createElement("div");      
-        barraProgresso.className = "progresso";        
+        barraProgresso.className = "progresso";   
+
         document.body.appendChild(mensagemErro);      
-        document.body.appendChild(barraProgresso);        
+        document.body.appendChild(barraProgresso);
+
         mensagemErro.style.display = "block";      
         barraProgresso.style.display = "block"; 
-        // Alterado para "block" para garantir exibição        
+        // Alterado para "block" para garantir exibição  
+
         let tempoRestante = 3;      
-        const intervalo = 1000;        
+        const intervalo = 1000;       
+
         const temporizador = setInterval(function() {          
             tempoRestante -= 1;          
             const percentual = ((3 - tempoRestante) / 3) * 100;          
@@ -68,5 +72,7 @@ function logar() {
             if (tempoRestante <= 0) {              
                 clearInterval(temporizador);              
                 mensagemErro.style.display = "none";              
-                barraProgresso.style.display = "none";          }      }, 
-                intervalo);  }
+                barraProgresso.style.display = "none";          
+            }      
+        }, intervalo);  
+    }
