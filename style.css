@@ -633,14 +633,14 @@ input.botaoAbraConta:hover {
 
 .contentAccount {
     display: grid;
-    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-columns: 1fr 2fr;
     grid-template-rows: auto auto auto;
     grid-template-areas: 
-    'coluna1 coluna2 coluna3'
-    'coluna1 coluna2 coluna3'
-    'coluna1 coluna2 coluna3';
-    margin: 20px 90px;
-    background-color: #dbdbdb;
+    'coluna1 coluna2'
+    'coluna1 coluna2'
+    'coluna1 coluna2';
+    margin: 20px 60px;
+    background-color: #000033;
     border-radius: 15px;
 }
 
@@ -651,11 +651,9 @@ aside {
 
 .firstContent {
     grid-area: coluna2;
+    display: flex;
 }
 
-.secondContent {
-    grid-area: coluna3;
-}
 
 .nameUser  {
     display: flex;
@@ -695,7 +693,7 @@ aside {
 .menuBarUser li {
     list-style-type: none;
     padding-bottom: 15px;
-    border-bottom: 1px solid #dbdbdb;
+    border-bottom: 1px solid #000033;
 }
 
 .menuBarUser i {
@@ -726,8 +724,46 @@ aside {
 }
 
 .firstContent {
-    background-color: white;
+    margin: 0 20px 20px 20px;
 }
 
+.balanceAccount{
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.titleBalance {
+    font-weight: bold
+}
+
+.saldo1 {
+    font-size: 1.5em;
+    font-weight: bolder;
+    margin-top: 20px;
+    color: rgb(42, 42, 99)
+}
+
+.saldo2 {
+    font-size: 1.5em;
+    font-weight: bolder;
+    color: rgb(153, 47, 47)
+}
+
+.balanceAvaliable {
+    color: gray;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+.balanceAccount hr {
+    margin: 20px 0;
+}
+
+.secondContent {
+    display: grid;
+    grid
+}
 
 
