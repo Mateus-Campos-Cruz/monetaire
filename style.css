@@ -763,7 +763,18 @@ aside {
 
 .secondContent {
     display: grid;
-    grid
+    
 }
 
 
+.contentCardsAcc {
+    display: flex;
+}
+
+.cardAcc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    padding: 50px;
+}
