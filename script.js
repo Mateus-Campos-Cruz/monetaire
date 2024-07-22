@@ -243,9 +243,8 @@ function entrarConta() { // DIRECIONA PARA A PÁGINA DO USUÁRIO
 
         /**TRANSFERÊNCIA*/
 
-        function abrirTransferencia() {
-            console.log('abrirTransferencia chamada');
-        
+        function abrirTransferencia() { 
+
             // Esconde todos os elementos com a classe 'firstContent'
             const firstContents = document.getElementsByClassName('firstContent');
             for (let i = 0; i < firstContents.length; i++) {
@@ -255,9 +254,24 @@ function entrarConta() { // DIRECIONA PARA A PÁGINA DO USUÁRIO
         
             // Exibe todos os elementos com a classe 'transferencia'
             const transferencias = document.getElementsByClassName('transferencia');
-            for (let i = 0; i < transferencias.length; i++) {
-                console.log('Exibindo transferencia:', transferencias[i]);
-                transferencias[i].style.display = 'block';
-            }
+
+            const cssStyle = `.transferencia2 {
+            grid-area: coluna2;
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+            }` 
+
+                const styleElement = document.createElement('style');
+                styleElement.type = 'text/css';
+                styleElement.appendChild(document.createTextNode(cssStyles));
+                document.head.appendChild(styleElement);
+
+                // Aplica o id content1 ao elemento com id infoAdressAPI
+                const transferencia2 = document.getElementsByClassName('transferencia2');
+                transferencia.className = "transferencia2";
+
+
+            
         }
          /**TRANSFERÊNCIA FIM*/
