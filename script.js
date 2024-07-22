@@ -6,7 +6,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
 });
 
 
-function logar() { //FUNÇÃO ACIONADA QUANDO CLICA NO BOTÃO ENTRAR
+function logar() { //FUNÇÃO ACIONADA QUANDO CLICA NO BOTÃO ENTRAR/LOGAR
 
     const usuario = document.getElementById('usuario').value;
     const password = document.getElementById('senha').value;
@@ -97,7 +97,7 @@ function entrarConta() { // DIRECIONA PARA A PÁGINA DO USUÁRIO
             }
         }
 
-    function procurarCep(){
+    function procurarCep(){ // ACIONA A API PARA PROCURAR INFORMAÇÕES DO CEP
 
         const campo = document.getElementById('cep').value
         
@@ -168,7 +168,7 @@ function entrarConta() { // DIRECIONA PARA A PÁGINA DO USUÁRIO
             }
         }
 
-        async function buscarCep() {
+        async function buscarCep() { // API DE CEP
             const cep = document.getElementById('cep').value.replace(/\D/g, ''); // Remove caracteres não numéricos
             if (cep === "") {
                 alert('Por favor, digite um CEP.');
@@ -203,7 +203,7 @@ function entrarConta() { // DIRECIONA PARA A PÁGINA DO USUÁRIO
         }
     
 
-    function verificarInfoConta() {
+    function verificarInfoConta() { // VERIFICA SE INFORMAÇÕES DO FORMULARIO NOVA CONTA ESTA PREENCHIDO
          
         const nome = document.getElementById('nome').value;
         const dataNascimento = document.getElementById('dataNascimento').value;
