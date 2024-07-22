@@ -260,4 +260,4 @@ function entrarConta() { // DIRECIONA PARA A PÁGINA DO USUÁRIO
                 transferencias[i].style.display = 'block';
             }
         }
-        
+         /**TRANSFERÊNCIA FIM*/
