@@ -240,3 +240,24 @@ function entrarConta() { // DIRECIONA PARA A PÁGINA DO USUÁRIO
         }
     }
         /*ABRA SUA CONTA FIM*/
+
+        /**TRANSFERÊNCIA*/
+
+        function abrirTransferencia() {
+            console.log('abrirTransferencia chamada');
+        
+            // Esconde todos os elementos com a classe 'firstContent'
+            const firstContents = document.getElementsByClassName('firstContent');
+            for (let i = 0; i < firstContents.length; i++) {
+                console.log('Escondendo firstContent:', firstContents[i]);
+                firstContents[i].style.display = 'none';
+            }
+        
+            // Exibe todos os elementos com a classe 'transferencia'
+            const transferencias = document.getElementsByClassName('transferencia');
+            for (let i = 0; i < transferencias.length; i++) {
+                console.log('Exibindo transferencia:', transferencias[i]);
+                transferencias[i].style.display = 'block';
+            }
+        }
+        
