@@ -264,12 +264,13 @@ function entrarConta() { // DIRECIONA PARA A PÁGINA DO USUÁRIO
 
                 const styleElement = document.createElement('style');
                 styleElement.type = 'text/css';
-                styleElement.appendChild(document.createTextNode(cssStyles));
+                styleElement.appendChild(document.createTextNode(cssStyle));
                 document.head.appendChild(styleElement);
 
-                // Aplica o id content1 ao elemento com id infoAdressAPI
-                const transferencia2 = document.getElementsByClassName('transferencia2');
-                transferencia.className = "transferencia2";
+                // Aplica a classe 'transferencia2' aos elementos com a classe 'transferencia'
+                for (let i = 0; i < transferencias.length; i++) {
+                transferencias[i].classList.add('transferencia2');
+}
 
 
             
