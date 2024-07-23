@@ -814,8 +814,7 @@ aside {
 }
 
 .botaoVoltarTrans {
-    
-    
+    margin: 15px;
 }
 
 .botaoVoltarTrans a {
@@ -823,4 +822,5 @@ aside {
     background-color: #cd950c;
     color: #000033;
     padding: 15px;
+    
 }
