@@ -807,6 +807,20 @@ aside {
     font-weight: bold;
 }
 
+/*TRANSFERENCIA*/
+
 .transferencia {
     display: none;
+}
+
+.botaoVoltarTrans {
+    
+    
+}
+
+.botaoVoltarTrans a {
+    text-decoration: none;
+    background-color: #cd950c;
+    color: #000033;
+    padding: 15px;
 }

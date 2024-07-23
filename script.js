@@ -255,11 +255,14 @@ function entrarConta() { // DIRECIONA PARA A PÁGINA DO USUÁRIO
             // Exibe todos os elementos com a classe 'transferencia'
             const transferencias = document.getElementsByClassName('transferencia');
 
-            const cssStyle = `.transferencia2 {
+            const cssStyle = `
+            .transferencia2 {
             grid-area: coluna2;
-            display: flex;
-            flex-direction: column;
+            display: grid;
+            grid-colunm-template: 1fr;
+            grid-row-template: auto auto auto;
             background-color: white;
+            border-radius: 15px;
             }` 
 
                 const styleElement = document.createElement('style');
