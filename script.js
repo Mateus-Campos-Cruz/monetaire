@@ -274,6 +274,5 @@ function entrarConta() { // DIRECIONA PARA A PÁGINA DO USUÁRIO
                 for (let i = 0; i < transferencias.length; i++) {
                 transferencias[i].classList.add('transferencia2');
 }
-   
         }
          /**TRANSFERÊNCIA FIM*/
