@@ -275,9 +275,8 @@ function entrarConta() { // DIRECIONA PARA A PÁGINA DO USUÁRIO
                 transferencias[i].classList.add('transferencia2');
 }
 
-
             
         }
 
-        
+
          /**TRANSFERÊNCIA FIM*/
