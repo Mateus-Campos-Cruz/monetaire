@@ -643,6 +643,7 @@ aside {
     flex-direction: column;
 }
 
+
 .contentAccount {
     display: grid;
     grid-template-columns: 2fr 2fr;
